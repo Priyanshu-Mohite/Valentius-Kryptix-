@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Valentius Kryptix — Full-Stack Developer & Software Engineer. Explore featured projects, technical skills, and get in touch.">
+  <meta name="keywords" content="portfolio, web developer, software engineer, full stack, javascript, html, css, valentius kryptix">
+  <meta name="author" content="Valentius Kryptix">
+  <title>Valentius Kryptix | Full-Stack Software Engineer Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Valentius Kryptix Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">Valentius</span><span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Theme Switcher & Mobile Menu Trigger -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary header-cta-btn">Hire Me</a>
+
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" type="button" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span>Available for Opportunities & Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Valentius Kryptix</span>
+          </h1>
+
+          <p class="hero-role">Full-Stack Software Engineer & Creative Problem Solver</p>
+
+          <p class="hero-description">
+            I craft high-performance web applications, intuitive digital interfaces, and robust backend systems with clean, maintainable code. Dedicated to delivering seamless user experiences and real business value.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="#about" class="btn btn-ghost">Learn More &darr;</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsive & Semantic</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">0ms</span>
+              <span class="stat-label">Fast Vanilla JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <img src="assets/avatar.svg" alt="Valentius Kryptix Developer Profile" class="avatar-image" width="300" height="300">
+            
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-left" title="JavaScript / TypeScript">
+              <span class="badge-icon">⚡</span>
+              <span>Modern JS</span>
+            </div>
+            <div class="floating-badge badge-bottom-right" title="Clean Architecture">
+              <span class="badge-icon">🚀</span>
+              <span>Full Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">About Me</span>
+          <h2 class="section-title">Passionate about clean code & meaningful design</h2>
+          <p class="section-subtitle">Bridging the gap between creative visual interfaces and robust engineering principles.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card bio-card">
+            <h3 class="card-title">My Journey</h3>
+            <p class="bio-text">
+              I am an aspiring software engineer with a strong foundation in modern web technologies. My approach focuses on writing accessible, semantic HTML, modular CSS, and clean, readable JavaScript before relying on complex frameworks.
+            </p>
+            <p class="bio-text">
+              Whether building interactive client-side applications, designing scalable REST APIs, or tuning page load performance, I love translating complex challenges into elegant, developer-friendly software solutions.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-bullet">✦</span>
+                <div>
+                  <strong>Recruiter-Ready Standards:</strong> Obsessive attention to responsive layouts, semantic structure, and cross-browser reliability.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet">✦</span>
+                <div>
+                  <strong>Continuous Learner:</strong> Rapidly mastering modern tooling, algorithmic fundamentals, and team collaboration practices.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="about-details">
+            <div class="detail-card">
+              <h4>Quick Facts</h4>
+              <dl class="facts-list">
+                <div class="fact-row">
+                  <dt>Role:</dt>
+                  <dd>Full-Stack Developer Intern</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>Location:</dt>
+                  <dd>Remote / Worldwide</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>Interests:</dt>
+                  <dd>Web Performance, UI/UX, Cloud & AI</dd>
+                </div>
+                <div class="fact-row">
+                  <dt>Status:</dt>
+                  <dd><span class="badge-inline">Open to Internships</span></dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="detail-card philosophy-card">
+              <h4>Core Engineering Values</h4>
+              <ul class="values-list">
+                <li><span>🎯</span> <strong>User-Centric:</strong> Accessibility, speed, and intuitive navigation first.</li>
+                <li><span>🧩</span> <strong>Maintainable:</strong> Modular components with clean documentation.</li>
+                <li><span>🛡️</span> <strong>Resilient:</strong> Error handling, edge-case validation, and robust testing.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">A curated toolkit honed through hands-on projects, course labs, and code practice.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category: Frontend -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box frontend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Development</h3>
+            </div>
+            <p class="category-desc">Crafting responsive, visually engaging, and accessible client interfaces.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5 & Semantics</span>
+              <span class="skill-tag">Modern CSS3</span>
+              <span class="skill-tag">Vanilla JavaScript (ES6+)</span>
+              <span class="skill-tag">Flexbox & Grid</span>
+              <span class="skill-tag">Responsive Web Design</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">UI/UX & Accessibility (a11y)</span>
+            </div>
+          </article>
+
+          <!-- Skill Category: Backend & Architecture -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box backend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend & APIs</h3>
+            </div>
+            <p class="category-desc">Architecting reliable servers, RESTful endpoints, and data storage.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">JSON / Data Modeling</span>
+              <span class="skill-tag">SQL & Relational DBs</span>
+              <span class="skill-tag">Authentication Basics</span>
+              <span class="skill-tag">Python Scripting</span>
+            </div>
+          </article>
+
+          <!-- Skill Category: Tools & Workflow -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box tools-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Dev Tools & Workflow</h3>
+            </div>
+            <p class="category-desc">Modern version control, debugging, and efficient developer environments.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">VS Code & Live Server</span>
+              <span class="skill-tag">Chrome & Firefox DevTools</span>
+              <span class="skill-tag">Command Line / Bash</span>
+              <span class="skill-tag">Vite & Bundlers</span>
+              <span class="skill-tag">Postman API Testing</span>
+              <span class="skill-tag">Netlify / GitHub Pages</span>
+            </div>
+          </article>
+
+          <!-- Skill Category: Computer Science Core -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box core-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Foundations & Best Practices</h3>
+            </div>
+            <p class="category-desc">Algorithmic thinking, clean code principles, and performance mindset.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms & Big-O</span>
+              <span class="skill-tag">Object-Oriented Design</span>
+              <span class="skill-tag">DRY / Clean Architecture</span>
+              <span class="skill-tag">Performance Profiling</span>
+              <span class="skill-tag">Agile Development</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built with focused requirements, semantic design, and clean architecture.</p>
+        </div>
+
+        <!-- Interactive Filter Controls -->
+        <div class="project-filter-bar" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (3)</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend & UI</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools & AI</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- PROJECT 1: DevMetrics Pro -->
+          <article class="project-card" data-category="fullstack" data-project-id="1">
+            <figure class="project-media-wrapper">
+              <img src="assets/project-1.svg" alt="DevMetrics Pro - Developer Analytics & Telemetry Dashboard" class="project-image" loading="lazy" width="640" height="400">
+              <div class="project-overlay">
+                <div class="overlay-actions">
+                  <a href="https://github.com/valentiuskryptix/devmetrics-pro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass" aria-label="View DevMetrics Pro source code on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                  </a>
+                  <a href="#projects" class="btn btn-sm btn-primary live-demo-trigger" data-demo="DevMetrics Pro Live Demo: Real-time telemetry streaming at 60 FPS with responsive charting and zero latency.">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </figure>
+
+            <div class="project-body">
+              <div class="project-category-tag">Full-Stack Platform</div>
+              <h3 class="project-title">DevMetrics Pro — Telemetry & Analytics Dashboard</h3>
+              <p class="project-description">
+                A high-throughput monitoring dashboard that visualizes API latency, throughput metrics, server health status, and historical error rates with live updating SVG charts.
+              </p>
+
+              <div class="tech-stack-badges">
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">CSS Grid</span>
+                <span class="tech-pill">Chart.js</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Priyanshu-Mohite/Valentius-Kryptix-" target="_blank" rel="noopener noreferrer" class="link-with-arrow">
+                  <span>Explore Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="project-inspect-btn" data-project-idx="0" aria-label="View features of DevMetrics Pro">Features &darr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: KryptixPay Terminal -->
+          <article class="project-card" data-category="frontend" data-project-id="2">
+            <figure class="project-media-wrapper">
+              <img src="assets/project-2.svg" alt="KryptixPay - Web3 Multi-Currency Payment Terminal" class="project-image" loading="lazy" width="640" height="400">
+              <div class="project-overlay">
+                <div class="overlay-actions">
+                  <a href="https://github.com/Priyanshu-Mohite/Valentius-Kryptix-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass" aria-label="View KryptixPay source code on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                  </a>
+                  <a href="#projects" class="btn btn-sm btn-primary live-demo-trigger" data-demo="KryptixPay Terminal: Instant multi-currency rate calculation, client-side validation, and simulated instant settlement.">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </figure>
+
+            <div class="project-body">
+              <div class="project-category-tag">Fintech Interface</div>
+              <h3 class="project-title">KryptixPay — Multi-Currency Payment Terminal</h3>
+              <p class="project-description">
+                A sleek financial checkout experience featuring automated currency conversion, simulated encrypted transactions, real-time transaction history logs, and adaptive card rendering.
+              </p>
+
+              <div class="tech-stack-badges">
+                <span class="tech-pill">Semantic HTML5</span>
+                <span class="tech-pill">Vanilla CSS (Glassmorphism)</span>
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">Crypto API</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Priyanshu-Mohite/Valentius-Kryptix-" target="_blank" rel="noopener noreferrer" class="link-with-arrow">
+                  <span>Explore Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="project-inspect-btn" data-project-idx="1" aria-label="View features of KryptixPay">Features &darr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: PromptFlow AI -->
+          <article class="project-card" data-category="tools" data-project-id="3">
+            <figure class="project-media-wrapper">
+              <img src="assets/project-3.svg" alt="PromptFlow AI - Visual Prompt Engineering Workspace" class="project-image" loading="lazy" width="640" height="400">
+              <div class="project-overlay">
+                <div class="overlay-actions">
+                  <a href="https://github.com/Priyanshu-Mohite/Valentius-Kryptix-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass" aria-label="View PromptFlow AI source code on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                  </a>
+                  <a href="#projects" class="btn btn-sm btn-primary live-demo-trigger" data-demo="PromptFlow AI Workspace: Node-based chaining, parameter tuning, token estimation, and streaming output emulation.">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </figure>
+
+            <div class="project-body">
+              <div class="project-category-tag">Developer Tool / AI</div>
+              <h3 class="project-title">PromptFlow AI — Visual Agent Workspace</h3>
+              <p class="project-description">
+                A visual node-based prompt orchestration canvas to design, test, and benchmark autonomous AI agent workflows with JSON streaming and latency benchmarking.
+              </p>
+
+              <div class="tech-stack-badges">
+                <span class="tech-pill">JavaScript Canvas</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">JSON Schema</span>
+                <span class="tech-pill">CSS Custom Vars</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Priyanshu-Mohite/Valentius-Kryptix-" target="_blank" rel="noopener noreferrer" class="link-with-arrow">
+                  <span>Explore Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="project-inspect-btn" data-project-idx="2" aria-label="View features of PromptFlow AI">Features &darr;</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-subtitle">I'm currently seeking internship opportunities, freelance collaborations, and impactful technical teams.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Info & Social Channels -->
+          <aside class="contact-info-panel">
+            <h3 class="contact-heading">Contact Details</h3>
+            <p class="contact-subtext">
+              Feel free to reach out directly via email, connect on LinkedIn, or inspect my open source activity on GitHub. I typically reply within 24 hours!
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card with Copy Action -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:valentius.kryptix@example.com" class="method-value" id="contact-email-text">valentius.kryptix@example.com</a>
+                </div>
+                <button id="copy-email-btn" class="icon-btn copy-btn" title="Copy email address to clipboard" aria-label="Copy email address to clipboard">
+                  <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Location & Availability</span>
+                  <span class="method-value">Open to Remote & Hybrid Roles Worldwide</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links with SVGs -->
+            <div class="social-channels">
+              <span class="social-label">Connect Online</span>
+              <div class="social-links-row">
+                <!-- GitHub -->
+                <a href="https://github.com/Priyanshu-Mohite" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/priyanshumohite" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <!-- Twitter / X -->
+                <a href="https://twitter.com/valentiuskryptx" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter X Profile" title="Twitter / X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Interactive Contact Form -->
+          <article class="contact-form-panel">
+            <h3 class="form-panel-title">Send a Direct Message</h3>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="user-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name">
+                  <span class="field-error-msg" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="user-email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="user-email" name="email" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                  <span class="field-error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject" class="form-label">Subject</label>
+                <input type="text" id="user-subject" name="subject" class="form-input" placeholder="Internship Opportunity / Project Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="user-message" name="message" class="form-textarea" rows="5" placeholder="Hi Valentius, I saw your portfolio and would love to discuss..." required></textarea>
+                <span class="field-error-msg" id="message-error">Please include a message (minimum 10 characters).</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block submit-btn">
+                <span class="btn-text">Send Message</span>
+                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Details Modal (JS Interactive) -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close" aria-label="Close project modal">&times;</button>
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Valentius<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Valentius Kryptix. All rights reserved.
+        </p>
+        <p class="footer-subtext">WA-1 Internship Task • Built with pure HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+          <span>Top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
